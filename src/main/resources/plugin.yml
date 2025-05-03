@@ -1,0 +1,4 @@
+name: QuestSystem
+version: '${version}'
+main: dev.u9g.questsystem.QuestSystem
+api-version: '1.20'
