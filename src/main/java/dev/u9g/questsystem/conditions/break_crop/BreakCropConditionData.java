@@ -39,6 +39,9 @@ public record BreakCropConditionData(String target, long amount) implements Cond
         var left = amount - player
                 .getPersistentDataContainer()
                 .getOrDefault(key, PersistentDataType.LONG, 0L);
+        if (left == 1L) {
+            return "harvest <u>" + left + "</u> more " + target;
+        }
         return "harvest <u>" + left + "</u> more " + target + " crops";
     }
 }
