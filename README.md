@@ -7,7 +7,6 @@
 - Design gameplay progress functions that allow quests to check that a user has completed a specific action
 
 **Anatomy of a Quest**  
-**Anatomy of a Quest**  
 Quests introduce a split of the tutorial into a collection of individual linear pathways that can be followed independently and out-of-order as a user often decides their own playstyle which may not include every part of the game. (ie. a player may stick to island and never go to the adventure, a player may also only go to adventure and never interact with island)
 
 **Design Goals**
