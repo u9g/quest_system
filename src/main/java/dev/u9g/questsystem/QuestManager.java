@@ -222,7 +222,7 @@ public class QuestManager implements Listener {
 
 
     void resetCachedPlayerRequirements(Player player) {
-        Bukkit.broadcast(MiniMessage.miniMessage().deserialize("resetCachedPlayerRequirements"));
+//        Bukkit.broadcast(MiniMessage.miniMessage().deserialize("resetCachedPlayerRequirements"), "admin.admin");
 
         // clear all cached requirements
         List<NamespacedKey> keysToClear = new ArrayList<>();
@@ -258,7 +258,7 @@ public class QuestManager implements Listener {
     }
 
     public void evaluatePossibleLevelUp(Player player) {
-        Bukkit.broadcast(MiniMessage.miniMessage().deserialize("evaluatePossibleLevelUp"));
+//        Bukkit.broadcast(MiniMessage.miniMessage().deserialize("evaluatePossibleLevelUp"), "admin.admin");
         String completedQuests = player.getPersistentDataContainer().getOrDefault(completedQuestsNSK, PersistentDataType.STRING, "");
         Set<String> completedQuestsSet = new HashSet<>(Arrays.asList(completedQuests.split(";")));
         for (QuestLine questLine : this.questLines) {
