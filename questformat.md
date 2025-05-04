@@ -17,7 +17,7 @@ questlines:
           id: harvest_wheat_1
           title: Harvest Wheat 1
           description: Harvest 10 wheat
-        completion_conditions:
+        conditions:
           - type: break_crop
             target: wheat
             amount: 10
@@ -25,34 +25,34 @@ questlines:
           - type: xp_bottle
             xp_amount: 100
           - type: seed
-            target: wheat
+            seedType: wheat
             amount: 1
       - meta:
           id: harvest_wheat_2
           title: Harvest Wheat 2
           description: Harvest 20 wheat
-        completion_conditions:
-          - type: gather_item
+        conditions:
+          - type: break_crop
             target: wheat
             amount: 20
         rewards:
           - type: xp_bottle
             xp_amount: 200
           - type: seed
-            target: wheat
+            seedType: wheat
             amount: 3 # purposefully more than 5 to incentivize following quest line
       - meta:
           id: harvest_wheat_3
           title: Harvest Wheat 3
           description: Harvest 50 wheat
-        completion_conditions:
-          - type: gather_item
+        conditions:
+          - type: break_crop
             target: wheat
             amount: 50
         rewards:
           - type: xp_bottle
             xp_amount: 200
           - type: seed
-            target: wheat
+            seedType: wheat
             amount: 8
 ```
