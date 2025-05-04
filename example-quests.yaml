@@ -1,0 +1,124 @@
+questlines:
+  - meta:
+      id: hybrid_player
+      title: Hybrid Player
+      description: Just how versatile are you?
+    quests:
+      - meta:
+          id: hybrid_player_1
+          title: Hybrid 1
+        conditions:
+          - type: break_crop
+            target: wheat
+            amount: 5
+          - type: kill_mob
+            target: pig
+            amount: 5
+        rewards:
+          - type: xp
+            amount: 500
+      - meta:
+          id: hybrid_player_2
+          title: Hybrid 2
+        conditions:
+          - type: break_crop
+            target: potato
+            amount: 10
+          - type: kill_mob
+            target: chicken
+            amount: 10
+        rewards:
+          - type: xp
+            amount: 1000
+      - meta:
+          id: hybrid_player_3
+          title: Hybrid 3
+        conditions:
+          - type: break_crop
+            target: carrot
+            amount: 15
+          - type: kill_mob
+            target: rabbit
+            amount: 15
+        rewards:
+          - type: xp
+            amount: 2000
+  - meta:
+      id: pig_farmer
+      title: Pig Farmer
+      description: A formidable foe, if you dare.
+    quests:
+      - meta:
+          id: pig_farmer_1
+          title: Pig Farmer 1
+        conditions:
+          - type: kill_mob
+            target: pig
+            amount: 1
+        rewards:
+          - type: xp
+            amount: 50
+      - meta:
+          id: pig_farmer_2
+          title: Pig Farmer 2
+        conditions:
+          - type: kill_mob
+            target: pig
+            amount: 3
+        rewards:
+          - type: xp
+            amount: 200
+      - meta:
+          id: pig_farmer_3
+          title: Pig Farmer 3
+        conditions:
+          - type: kill_mob
+            target: pig
+            amount: 5
+        rewards:
+          - type: xp
+            amount: 500
+  - meta:
+      id: harvest_wheat
+      title: Harvest Wheat
+      description: The first crop, but can you master it?
+    quests:
+      - meta:
+          id: harvest_wheat_1
+          title: Harvest Wheat 1
+        conditions:
+          - type: break_crop
+            target: wheat
+            amount: 1
+        rewards:
+          - type: xp
+            amount: 100
+          - type: seed
+            seedType: wheat
+            amount: 1
+      - meta:
+          id: harvest_wheat_2
+          title: Harvest Wheat 2
+        conditions:
+          - type: break_crop
+            target: wheat
+            amount: 3
+        rewards:
+          - type: xp
+            amount: 200
+          - type: seed
+            seedType: wheat
+            amount: 3 # purposefully more than 5 to incentivize following quest line
+      - meta:
+          id: harvest_wheat_3
+          title: Harvest Wheat 3
+        conditions:
+          - type: break_crop
+            target: wheat
+            amount: 5
+        rewards:
+          - type: xp
+            amount: 200
+          - type: seed
+            seedType: wheat
+            amount: 8
